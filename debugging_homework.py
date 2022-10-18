@@ -136,4 +136,12 @@ def wrong_add_function(arg1,arg2):
 arg_str_1=['1','2','3']
 arg_str_2=['1','1', 1]
 wrong_add_function(arg_str_1,arg_str_2)
+def exception_add_function(arg):
+   for x in range(len(arg)):
+      try:
+         res = type(x) == type(str)
+         res(x)
+      except:
+         print("Function has incorrect input in argument")
+exception_add_function(arg_str_2)
 # %%
